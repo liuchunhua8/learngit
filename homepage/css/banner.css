@@ -1,0 +1,232 @@
+/*图片轮播css*/
+*{margin: 0 ;padding: 0;}
+body{margin:  0 auto;}
+img{
+	border: none;
+}
+
+/*左右图片*/
+.boxx { width: 1440px; height: 389px; position: relative; margin: 0px auto 0; background: #ccc; overflow:hidden;}
+.boxx ol { position: absolute; left: 200px; bottom: 1px; z-index: 2;display: none }
+.boxx ol li { float: left; margin-right: 3px; display: inline; cursor: pointer; padding: 2px 6px;font-family: arial; font-size: 12px; }
+.boxx .active { padding: 3px 8px;  position: relative; bottom: 2px; }
+
+.boxx ul { position: absolute; top: 0; left: 0; z-index: 1;width:2000% ; }
+.boxx  ul li { width: 1440;  float: left; }
+.boxx  ul img { float: left; width: 1440px;  }
+
+.boxx  p { width: 38px; height: 51px; line-height: 51px; font-family: arial; 
+color: #fff; text-align: center; font-weight: bold; background: #d5d5d7;
+ border: 1px solid #ccc; 
+position: absolute; top: 90px; z-index: 2; cursor: pointer;
+display: none;
+ }
+ .boxx  p:hover{background: #3fc0a4;color: #fbfbfb;}
+.boxx  .prev { left: 0px;background: url(img/f.png) no-repeat 0 0;z-index:5; }
+.boxx .next { right: 0px;background: url(img/f.png) no-repeat 0 -51px;z-index: 5; }
+
+/*全球设计*/
+#dark{
+	width: 100%;height: 62px;
+	
+	background-color: #333333;
+	min-width:1400px;
+	position: relative;
+	clear:both;
+}
+
+#dark  .mei{
+	width: 1240px;height: 62px;
+	margin: 0 auto;
+}
+
+.mei img{
+	display: block;position: absolute;
+	top:10px;margin-left: 120px;
+}
+/*今日上新*/
+.xi{
+	width: 100%;
+	margin: 0px auto 0px;
+	background: #fff;
+}
+.xi .xin {
+	width: 1242px;
+	margin: 0 auto;background: #fff;
+}
+.xi .xin h1{width: 100%;height: 42px;display: block;line-height: 42px;}
+.clear{clear: both;}
+/*衣服展示*/
+.ro{
+	margin: 0 auto;
+}
+.row{
+	width: 1280px;margin-left: 80px;
+}
+.sele-leaf{
+	float: left;
+    width: 295px;
+    margin: 0 10px 20px;
+    min-height: 1px;
+}
+.salem{
+	display: block;
+    position: relative;
+   overflow: hidden;
+}
+.subtile{
+	position: absolute;
+    left: 0;
+    bottom: -30px;
+    color: #303030;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 30px;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255,255,255,0.8);
+}
+.sele-leaf img{
+	max-width: 100%;
+    height: 295px;
+}
+.sele-infor{
+	margin-top: 20px;
+}
+.sele-infor a{
+	color: #303030;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    font-size: 19px;
+}
+/*两张图片的*/
+.conad{
+	width: 100%;
+	margin-right: auto;
+    margin-left: auto;
+}
+.btm{
+	width: 1240px;
+	margin-left: 87px;
+}
+.btm a{
+	height: 200px;
+    float: left;
+    width: 610px;
+   margin-left:10px;
+}
+
+.btma{
+	background: url(../img/c1.png);
+}
+.btmb{
+	background: url(../img/c2.png);
+}
+
+/*本周特卖*/
+.sele-weet{
+	margin: 0 auto;
+	width: 100%;
+}
+
+.sele-weet .week{
+	width: 1280px;
+	/*margin-left: 80px;*/
+}
+
+.week .title{
+	/*position: relative;*/
+	width: 1240px;
+	height: 100px;
+    margin-left: 95px;
+    clear: both;
+    
+}
+
+.week .title>h1{
+	height: 100px;
+	display: block;
+	line-height:100px;
+	float: left;
+	
+	/*margin-top: 50px;*/
+}
+.title>strong{
+	/* position: absolute;*/
+	float: left;
+	height:100px;
+    color: #e36477;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 100px;
+    
+    
+}
+ .panie{
+	width: 1240px;
+	margin-top: 10px;
+	margin-left: 95px;
+	margin-bottom: 20px;
+    background-color: #bbbbb9;
+}
+/*.week .row  .sele-leaf{
+	margin-top:50px ;*/
+	/*height: 340px;
+	line-height: 340px;*/
+/*}*/
+
+/*品牌图*/
+/*.roo{
+	margin: 0 auto;
+}
+.rowo{
+	width: 1280px;margin-left: 80px;
+}
+.sele-lea{
+	float: left;
+    width: 295px;
+    margin: 0 10px 20px;
+    min-height: 1px;
+}
+.sal{
+	display: block;
+    position: relative;
+   overflow: hidden;
+}
+.subti{
+	position: absolute;
+    left: 0;
+    bottom: -30px;
+    color: #303030;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 30px;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255,255,255,0.8);
+}
+.sele-lea img{
+	max-width: 100%;
+    height: 295px;
+}
+.infor{
+	margin-top: 20px;
+}
+.infor a{
+	color: #303030;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    font-size: 19px;
+}
+
+*/
